@@ -60,3 +60,10 @@ jobs:
       with:
         name: AppPackage-${{ matrix.configuration }}
         path: ${{ env.Wap_Project_Directory }}\AppPackages
+
+    - name: Publish artifact (optional)
+      run: dotnet publish MyApp/MyApp.csproj -c Release -o output
+
+
+
+        
